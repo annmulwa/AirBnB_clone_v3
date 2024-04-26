@@ -11,7 +11,7 @@ from api.v1.views import app_views
 
 
 @app_views.route('/places/<place_id>/reviews', strict_slashes=False)
-def get_all_reviews(city_id):
+def get_all_reviews(place_id):
     """
     Retrieves the list of all Review objects of a Place
     """
